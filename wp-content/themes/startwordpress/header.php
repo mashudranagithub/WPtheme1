@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blog Template for Bootstrap</title>
+    <title> <?php echo get_bloginfo('name'); ?> </title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -43,6 +43,6 @@
     <div class="container">
 
         <div class="blog-header">
-            <h1 class="blog-title">The Bootstrap Blog</h1>
+            <h1 class="blog-title"><a href="<?php echo get_bloginfo('wpurl') ?>"> <?php echo get_bloginfo('description'); ?> </a></h1>
             <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
         </div>
