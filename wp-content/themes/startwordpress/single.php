@@ -16,7 +16,6 @@
             endwhile;
         endif;
         ?>
-
     </div><!-- /.blog-main -->
 
 </div><!-- /.row -->

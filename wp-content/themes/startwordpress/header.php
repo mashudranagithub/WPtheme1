@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> <?php echo get_bloginfo('name'); ?> </title>
+    <title> <?php bloginfo('name'); ?> | <?php bloginfo('description'); ?> </title>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -19,12 +19,12 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?> >
 
     <div class="blog-masthead">
         <div class="container">
             <nav class="blog-nav">
-                <a class="blog-nav-item active" href="<?php echo get_bloginfo('wpurl') ?>">Home</a>
+                <a class="blog-nav-item active" href="<?php bloginfo('wpurl') ?>">Home</a>
                 <?php wp_list_pages('&title_li=') ?>
             </nav>
         </div>
@@ -33,6 +33,6 @@
     <div class="container">
 
         <div class="blog-header">
-            <h1 class="blog-title"><a href="<?php echo get_bloginfo('wpurl') ?>"> <?php echo get_bloginfo('description'); ?> </a></h1>
+            <h1 class="blog-title"><a href="<?php bloginfo('wpurl') ?>"> <?php bloginfo('description'); ?> </a></h1>
             <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
         </div>
